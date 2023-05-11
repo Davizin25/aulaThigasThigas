@@ -1,0 +1,19 @@
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    position: relative;
+    top: 20px;
+    left: 40%;
+}
+
+.entrada {
+    position: relative;
+    left: 40px;
+}
