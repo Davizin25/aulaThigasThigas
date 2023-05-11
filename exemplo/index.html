@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recrutamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Formulário de Recrutamento</h1>
+
+    <form action="cadastrar.php" method="post">
+
+        <!-- Nome <input type="text" name="nome"><br> -->
+        <p>Nome <input type="text" name="nome" class="entrada"></p>
+        <p>Sobrenome <input type="text" name="sobrenome" class="entrada"></p>
+
+        <p>Nick do jogo <input type="text" name="nick" class="entrada"></p>
+        <p>ID no Free Fire <input type="number" name="id" maxlength="4" class="entrada"></p>
+        <p>Idade <input type="number" name="idade" class="entrada"></p>
+
+        <p>
+            Gênero
+            <select name="genero">
+                <option value="masculino" selected>Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outros">Outros</option>
+            </select>
+        </p>
+
+        <p>Número Whatsapp <input type="number" name="whatsapp" class="entrada"></p>
+
+        <p>
+            Função no Squad
+            <select name="funcao">
+                <option value="coach" selected>Coach</option>
+                <option value="capitao">Capitão</option>
+                <option value="rush">Rush</option>
+                <option value="suporte AR">Suporte AR</option>
+                <option value="suporte AWM / M82B">Suporte AWM / M82B</option>
+            </select>
+        </p>
+
+        <p>
+            Possui troca de NICK?<br>
+            <input type="radio" name="trocaNick" value="sim" required>
+            <label for="sim">Sim</label><br>
+            <input type="radio" name="trocaNick" value="nao">
+            <label for="nao">Não</label><br>
+            <input type="radio" name="trocaNick" value="dima">
+            <label for="tenho dima">Tenho Dima, falta comprar o cartão</label>
+        </p>
+
+        <p>Comentários adicionais <input type="text" name="comentario" class="entrada"></p>
+
+        <p>
+            Nível de satisfação
+            <input type="radio" name="satisfacao" value="1">
+            <label for="1">1</label>
+            <input type="radio" name="satisfacao" value="2">
+            <label for="2">2</label>
+            <input type="radio" name="satisfacao " value="3">
+            <label for="3">3</label>
+            <input type="radio" name="satisfacao" value="4">
+            <label for="4">4</label>
+            <input type="radio" name="satisfacao" value="5">
+            <label for="5">5</label>
+        </p>
+
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+
+</body>
+
+</html>
